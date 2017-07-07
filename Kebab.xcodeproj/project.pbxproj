@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B31EB661F10272D00E2CAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB651F10272D00E2CAAE /* AppDelegate.swift */; };
+		2B31EB681F10272D00E2CAAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB671F10272D00E2CAAE /* ViewController.swift */; };
+		2B31EB6B1F10272D00E2CAAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B31EB691F10272D00E2CAAE /* Main.storyboard */; };
+		2B31EB6D1F10272D00E2CAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B31EB6C1F10272D00E2CAAE /* Assets.xcassets */; };
+		2B31EB701F10272D00E2CAAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B31EB6E1F10272D00E2CAAE /* LaunchScreen.storyboard */; };
+		2B31EB7B1F10272D00E2CAAE /* KebabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB7A1F10272D00E2CAAE /* KebabTests.swift */; };
+		2B31EB991F10280D00E2CAAE /* GeneralAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB871F10280D00E2CAAE /* GeneralAction.swift */; };
+		2B31EB9A1F10280D00E2CAAE /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB8B1F10280D00E2CAAE /* HomeBuilder.swift */; };
+		2B31EB9B1F10280D00E2CAAE /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB8D1F10280D00E2CAAE /* HomeInteractor.swift */; };
+		2B31EB9C1F10280D00E2CAAE /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB901F10280D00E2CAAE /* HomePresenter.swift */; };
+		2B31EB9D1F10280D00E2CAAE /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB921F10280D00E2CAAE /* HomeRouter.swift */; };
+		2B31EB9F1F10280D00E2CAAE /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB951F10280D00E2CAAE /* HomeState.swift */; };
+		2B31EBA01F10280D00E2CAAE /* HomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB961F10280D00E2CAAE /* HomeStore.swift */; };
+		2B31EBA11F10280D00E2CAAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EB981F10280D00E2CAAE /* HomeViewController.swift */; };
+		2B31EBA41F10284400E2CAAE /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B31EBA31F10284400E2CAAE /* ReSwift.framework */; };
+		2B31EBA71F102E9B00E2CAAE /* HomeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31EBA61F102E9B00E2CAAE /* HomeActions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B31EB771F10272D00E2CAAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B31EB5A1F10272D00E2CAAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B31EB611F10272D00E2CAAE;
+			remoteInfo = Kebab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B31EB621F10272D00E2CAAE /* Kebab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kebab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B31EB651F10272D00E2CAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B31EB671F10272D00E2CAAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B31EB6A1F10272D00E2CAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B31EB6C1F10272D00E2CAAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B31EB6F1F10272D00E2CAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B31EB711F10272D00E2CAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B31EB761F10272D00E2CAAE /* KebabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KebabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B31EB7A1F10272D00E2CAAE /* KebabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebabTests.swift; sourceTree = "<group>"; };
+		2B31EB7C1F10272D00E2CAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B31EB871F10280D00E2CAAE /* GeneralAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralAction.swift; sourceTree = "<group>"; };
+		2B31EB8B1F10280D00E2CAAE /* HomeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		2B31EB8D1F10280D00E2CAAE /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		2B31EB901F10280D00E2CAAE /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		2B31EB921F10280D00E2CAAE /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		2B31EB951F10280D00E2CAAE /* HomeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
+		2B31EB961F10280D00E2CAAE /* HomeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStore.swift; sourceTree = "<group>"; };
+		2B31EB981F10280D00E2CAAE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2B31EBA31F10284400E2CAAE /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		2B31EBA61F102E9B00E2CAAE /* HomeActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeActions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B31EB5F1F10272D00E2CAAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B31EBA41F10284400E2CAAE /* ReSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B31EB731F10272D00E2CAAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B31EB591F10272D00E2CAAE = {
+			isa = PBXGroup;
+			children = (
+				2B31EB641F10272D00E2CAAE /* Kebab */,
+				2B31EB791F10272D00E2CAAE /* KebabTests */,
+				2B31EB631F10272D00E2CAAE /* Products */,
+				2B31EBA21F10284300E2CAAE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B31EB631F10272D00E2CAAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB621F10272D00E2CAAE /* Kebab.app */,
+				2B31EB761F10272D00E2CAAE /* KebabTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B31EB641F10272D00E2CAAE /* Kebab */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB851F10280D00E2CAAE /* Common */,
+				2B31EB881F10280D00E2CAAE /* Modules */,
+				2B31EB651F10272D00E2CAAE /* AppDelegate.swift */,
+				2B31EB671F10272D00E2CAAE /* ViewController.swift */,
+				2B31EB691F10272D00E2CAAE /* Main.storyboard */,
+				2B31EB6C1F10272D00E2CAAE /* Assets.xcassets */,
+				2B31EB6E1F10272D00E2CAAE /* LaunchScreen.storyboard */,
+				2B31EB711F10272D00E2CAAE /* Info.plist */,
+			);
+			path = Kebab;
+			sourceTree = "<group>";
+		};
+		2B31EB791F10272D00E2CAAE /* KebabTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB7A1F10272D00E2CAAE /* KebabTests.swift */,
+				2B31EB7C1F10272D00E2CAAE /* Info.plist */,
+			);
+			path = KebabTests;
+			sourceTree = "<group>";
+		};
+		2B31EB851F10280D00E2CAAE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB861F10280D00E2CAAE /* UDF Types */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2B31EB861F10280D00E2CAAE /* UDF Types */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB871F10280D00E2CAAE /* GeneralAction.swift */,
+			);
+			path = "UDF Types";
+			sourceTree = "<group>";
+		};
+		2B31EB881F10280D00E2CAAE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB891F10280D00E2CAAE /* HomeModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2B31EB891F10280D00E2CAAE /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB8A1F10280D00E2CAAE /* Builder */,
+				2B31EB8C1F10280D00E2CAAE /* Interactor */,
+				2B31EB8E1F10280D00E2CAAE /* Module Interface */,
+				2B31EB8F1F10280D00E2CAAE /* Presenter */,
+				2B31EB911F10280D00E2CAAE /* Router */,
+				2B31EB931F10280D00E2CAAE /* UDF Store */,
+				2B31EB971F10280D00E2CAAE /* View */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		2B31EB8A1F10280D00E2CAAE /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB8B1F10280D00E2CAAE /* HomeBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		2B31EB8C1F10280D00E2CAAE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB8D1F10280D00E2CAAE /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2B31EB8E1F10280D00E2CAAE /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		2B31EB8F1F10280D00E2CAAE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB901F10280D00E2CAAE /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B31EB911F10280D00E2CAAE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB921F10280D00E2CAAE /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2B31EB931F10280D00E2CAAE /* UDF Store */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB961F10280D00E2CAAE /* HomeStore.swift */,
+				2B31EB951F10280D00E2CAAE /* HomeState.swift */,
+				2B31EBA61F102E9B00E2CAAE /* HomeActions.swift */,
+			);
+			path = "UDF Store";
+			sourceTree = "<group>";
+		};
+		2B31EB971F10280D00E2CAAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EB981F10280D00E2CAAE /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B31EBA21F10284300E2CAAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B31EBA31F10284400E2CAAE /* ReSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B31EB611F10272D00E2CAAE /* Kebab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B31EB7F1F10272D00E2CAAE /* Build configuration list for PBXNativeTarget "Kebab" */;
+			buildPhases = (
+				2B31EB5E1F10272D00E2CAAE /* Sources */,
+				2B31EB5F1F10272D00E2CAAE /* Frameworks */,
+				2B31EB601F10272D00E2CAAE /* Resources */,
+				2B31EBA51F10285200E2CAAE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kebab;
+			productName = Kebab;
+			productReference = 2B31EB621F10272D00E2CAAE /* Kebab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B31EB751F10272D00E2CAAE /* KebabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B31EB821F10272D00E2CAAE /* Build configuration list for PBXNativeTarget "KebabTests" */;
+			buildPhases = (
+				2B31EB721F10272D00E2CAAE /* Sources */,
+				2B31EB731F10272D00E2CAAE /* Frameworks */,
+				2B31EB741F10272D00E2CAAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B31EB781F10272D00E2CAAE /* PBXTargetDependency */,
+			);
+			name = KebabTests;
+			productName = KebabTests;
+			productReference = 2B31EB761F10272D00E2CAAE /* KebabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B31EB5A1F10272D00E2CAAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Chenguang Zhou";
+				TargetAttributes = {
+					2B31EB611F10272D00E2CAAE = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					2B31EB751F10272D00E2CAAE = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2B31EB611F10272D00E2CAAE;
+					};
+				};
+			};
+			buildConfigurationList = 2B31EB5D1F10272D00E2CAAE /* Build configuration list for PBXProject "Kebab" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B31EB591F10272D00E2CAAE;
+			productRefGroup = 2B31EB631F10272D00E2CAAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B31EB611F10272D00E2CAAE /* Kebab */,
+				2B31EB751F10272D00E2CAAE /* KebabTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B31EB601F10272D00E2CAAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B31EB701F10272D00E2CAAE /* LaunchScreen.storyboard in Resources */,
+				2B31EB6D1F10272D00E2CAAE /* Assets.xcassets in Resources */,
+				2B31EB6B1F10272D00E2CAAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B31EB741F10272D00E2CAAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B31EBA51F10285200E2CAAE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B31EB5E1F10272D00E2CAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B31EB9A1F10280D00E2CAAE /* HomeBuilder.swift in Sources */,
+				2B31EB681F10272D00E2CAAE /* ViewController.swift in Sources */,
+				2B31EBA71F102E9B00E2CAAE /* HomeActions.swift in Sources */,
+				2B31EB9D1F10280D00E2CAAE /* HomeRouter.swift in Sources */,
+				2B31EB661F10272D00E2CAAE /* AppDelegate.swift in Sources */,
+				2B31EB9F1F10280D00E2CAAE /* HomeState.swift in Sources */,
+				2B31EB9C1F10280D00E2CAAE /* HomePresenter.swift in Sources */,
+				2B31EBA01F10280D00E2CAAE /* HomeStore.swift in Sources */,
+				2B31EBA11F10280D00E2CAAE /* HomeViewController.swift in Sources */,
+				2B31EB9B1F10280D00E2CAAE /* HomeInteractor.swift in Sources */,
+				2B31EB991F10280D00E2CAAE /* GeneralAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B31EB721F10272D00E2CAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B31EB7B1F10272D00E2CAAE /* KebabTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B31EB781F10272D00E2CAAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B31EB611F10272D00E2CAAE /* Kebab */;
+			targetProxy = 2B31EB771F10272D00E2CAAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B31EB691F10272D00E2CAAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B31EB6A1F10272D00E2CAAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B31EB6E1F10272D00E2CAAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B31EB6F1F10272D00E2CAAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B31EB7D1F10272D00E2CAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B31EB7E1F10272D00E2CAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B31EB801F10272D00E2CAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Kebab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengguang.Kebab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2B31EB811F10272D00E2CAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Kebab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengguang.Kebab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2B31EB831F10272D00E2CAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KebabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengguang.KebabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kebab.app/Kebab";
+			};
+			name = Debug;
+		};
+		2B31EB841F10272D00E2CAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KebabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengguang.KebabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kebab.app/Kebab";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B31EB5D1F10272D00E2CAAE /* Build configuration list for PBXProject "Kebab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B31EB7D1F10272D00E2CAAE /* Debug */,
+				2B31EB7E1F10272D00E2CAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B31EB7F1F10272D00E2CAAE /* Build configuration list for PBXNativeTarget "Kebab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B31EB801F10272D00E2CAAE /* Debug */,
+				2B31EB811F10272D00E2CAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2B31EB821F10272D00E2CAAE /* Build configuration list for PBXNativeTarget "KebabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B31EB831F10272D00E2CAAE /* Debug */,
+				2B31EB841F10272D00E2CAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B31EB5A1F10272D00E2CAAE /* Project object */;
+}
