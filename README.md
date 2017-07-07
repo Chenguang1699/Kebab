@@ -1,9 +1,9 @@
 # Kebab
-Kebab is a new iOS Architecture based on VIPER and unidirectional data flow. It's inpired by Uber's -[Riblets](https://eng.uber.com/new-rider-app/) and -[Redux](https://github.com/reactjs/redux). 
+Kebab is a new iOS Architecture based on VIPER and unidirectional data flow. It's inpired by Uber's [Riblets](https://eng.uber.com/new-rider-app/) and [Redux](https://github.com/reactjs/redux). 
 
--[ReSwift] has been used to implement unidirectional data flow. Different with Reswift, Kebab uses Builder to instantiate Store and other units then inject the dependencies instead of using singleton.
+[ReSwift](https://github.com/ReSwift/ReSwift) has been used to implement unidirectional data flow. Different with Reswift, Kebab uses Builder to instantiate Store and other units then inject the dependencies instead of using singleton.
 
-With the help of unidirectional data flow, it increases the app's reliability and extensibility.
+Kebab works well for complex UI, e.g. nested view hierachy. With the help of unidirectional data flow, it handles communication and state changes in a single place( per module), hence increases the app's reliability and extensibility.
 
 A Demo project will be coming soon.
 
