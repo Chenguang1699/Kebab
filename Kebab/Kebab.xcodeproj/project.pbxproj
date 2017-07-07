@@ -101,6 +101,7 @@
 		2B8C69A21F0C8DF200D25738 /* Kebab */ = {
 			isa = PBXGroup;
 			children = (
+				2B8C6A8C1F0F7F1800D25738 /* Modules */,
 				2B8C69A31F0C8DF200D25738 /* AppDelegate.swift */,
 				2B8C69A51F0C8DF200D25738 /* ViewController.swift */,
 				2B8C69A71F0C8DF200D25738 /* Main.storyboard */,
@@ -135,6 +136,69 @@
 				2B8C69D21F0CA49900D25738 /* ReSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B8C6A8C1F0F7F1800D25738 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2B8C6A8D1F0F7F2200D25738 /* HomeModule */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		2B8C6A8D1F0F7F2200D25738 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				2B8C6A941F0F7FA000D25738 /* Module Interface */,
+				2B8C6A931F0F7F7D00D25738 /* UDF Store */,
+				2B8C6A921F0F7F7800D25738 /* Router */,
+				2B8C6A911F0F7F7100D25738 /* Interactor */,
+				2B8C6A901F0F7F6B00D25738 /* View */,
+				2B8C6A8F1F0F7F6100D25738 /* Presenter */,
+			);
+			name = HomeModule;
+			sourceTree = "<group>";
+		};
+		2B8C6A8F1F0F7F6100D25738 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		2B8C6A901F0F7F6B00D25738 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2B8C6A911F0F7F7100D25738 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		2B8C6A921F0F7F7800D25738 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		2B8C6A931F0F7F7D00D25738 /* UDF Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "UDF Store";
+			sourceTree = "<group>";
+		};
+		2B8C6A941F0F7FA000D25738 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Module Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
